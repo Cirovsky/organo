@@ -1,5 +1,6 @@
 .lista-suspensa {
     margin: 24px 0;
+    max-height: 20vw;
 }
 
 .lista-suspensa label {

@@ -13,3 +13,9 @@
 .botao:hover {
     color: #95FFD4;
 }
+
+.botao-abrir-formulario{
+    width: 2em;
+    height: 2em;
+    padding: .5em;
+}

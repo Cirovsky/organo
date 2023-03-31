@@ -1,8 +1,11 @@
-import './botao.css'
+import './Botao.css'
 
-const Botao = ({texto}) => {
-    return <button className="botao">
-        {texto}
+const Botao = ({evento, botaoAbrirForm, form, children}) => {
+    return <button 
+    className={`botao ${botaoAbrirForm? botaoAbrirForm : ''}`}
+    onClick={()=> evento? evento(!form): null}
+    >
+        {children}
     </button>
 }
 

@@ -3,14 +3,32 @@
 }
 
 .colaborador .cabecalho {
+    display: grid;
     background-color:  #F0F0F0;
     border-radius: 10px 10px 0px 0px;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 .colaborador img {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: center;
     width: 100px;
     border-radius: 50%;
     position: relative;
     bottom: -50px;
+}
+
+.colaborador .deletar{
+    padding: .75em .5em;
+    width: 1.5em;
+    height: 1.5em;
+    grid-row: 1/2;
+    grid-column: 3/4;
+    justify-self: flex-end;
+}
+
+.colaborador .deletar:hover{
+    cursor: pointer;
 }
 
 .colaborador .rodape {
